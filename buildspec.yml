@@ -1,4 +1,4 @@
-version.0.2
+version: 0.2
 
 phases:
   install:
@@ -6,15 +6,13 @@ phases:
       java: corretto11
   pre_build:
     commands:
-      - echo nothing to do in the pre_build phase...
+      - echo Nothing to do in the pre_build phase...
   build:
     commands:
-      - echo Build sytarted on "date"
+      - echo Build started on `date`
   post_build:
     commands:
-      - echo Build completed on "date"
-  artifacts:
-    files:
-      -'**/*"
-  
-    
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - '**/*'
