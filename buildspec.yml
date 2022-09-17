@@ -2,15 +2,15 @@ version.0.2
 
 phases:
   install:
-    runtime-version:
+    runtime-versions:
       java: corretto11
-  prebuild:
+  pre_build:
     commands:
       - echo nothing to do in the pre_build phase...
   build:
     commands:
       - echo Build sytarted on "date"
-  postbuild:
+  post_build:
     commands:
       - echo Build completed on "date"
   artifacts:
